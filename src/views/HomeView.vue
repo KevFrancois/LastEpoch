@@ -5,5 +5,6 @@ import ButtonExample from '../components/ButtonExample.vue'
 <template>
   <main>
     <ButtonExample />
+    <ButtonExample />
   </main>
 </template>
