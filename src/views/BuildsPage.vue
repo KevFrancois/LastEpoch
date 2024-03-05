@@ -1,29 +1,19 @@
-<script setup></script>
+<script setup>
+import BuildCards from '../components/BuildCards.vue'
+</script>
 
 <template>
   <div class="TitleBuild">
     <h1>Last Epoch Builds</h1>
   </div>
   <h2>Builds</h2>
-  <div class="classes">
-    <sections class="Sentinel">
-      <h3>Sentinel</h3>
-    </sections>
-    <sections class="Rogue">
-      <h3>Rogue</h3>
-    </sections>
-    <sections class="Mage">
-      <h3>Mage</h3>
-    </sections>
-    <sections class="Primalist">
-      <h3>Primalist</h3>
-    </sections>
-    <sections class="Acolyte">
-      <h3>Acolyte</h3>
-    </sections>
+  <div class="BuildCards">
+    <BuildCards text="Sentinel" img="Sentinel.png" alt="Logo Sentinel" class="BuildCardsItem" />
+    <BuildCards text="Rogue" img="Rogue.png" alt="Logo Rogue" class="BuildCardsItem" />
+    <BuildCards text="Mage" img="Mage.png" alt="Logo Mage" class="BuildCardsItem" />
+    <BuildCards text="Primalist" img="Primalist.png" alt="Logo Primalist" class="BuildCardsItem" />
+    <BuildCards text="Acolyte" img="Acolyte.png" alt="Logo Acolyte" class="BuildCardsItem" />
   </div>
-
-  <main></main>
 </template>
 
 <style>
@@ -38,7 +28,7 @@ h1 {
   color: rgb(255, 255, 255);
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: rgb(175, 175, 175);
-  background-image: url('../../img/HBackground3.jpeg');
+  background-image: url('../assets/HBackground3.jpeg');
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
@@ -62,5 +52,13 @@ h3 {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+.BuildCards {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  justify-items: center;
+}
+.BuildCardsItem:last-child {
+  justify-self: center;
 }
 </style>
