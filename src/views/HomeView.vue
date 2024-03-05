@@ -1,10 +1,9 @@
-<script setup>
-import ButtonExample from '../components/ButtonExample.vue'
-</script>
+<script setup></script>
 
 <template>
-  <main>
-    <ButtonExample />
-    <ButtonExample />
-  </main>
+  <header></header>
+
+  <main></main>
 </template>
+
+<style></style>

@@ -1,5 +1,5 @@
 <template>
-  <v-btn color="red" variant="outlined"> Button </v-btn>
+  <v-btn color="red" variant="outlined" class="buttonexemple"> Button </v-btn>
 </template>
 
 <style></style>
