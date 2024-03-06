@@ -6,6 +6,8 @@ import RogueBuilds from '@/views/RogueBuilds.vue'
 import PrimalistBuilds from '@/views/PrimalistBuilds.vue'
 import MageBuilds from '@/views/MageBuilds.vue'
 import AcolyteBuilds from '@/views/AcolyteBuilds.vue'
+import RegistrationPage from '@/views/RegistrationPage.vue'
+import ConnectionPage from '@/views/ConnectionPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +46,16 @@ const router = createRouter({
       path: '/Builds/Acolyte',
       name: 'Acolyte Builds',
       component: AcolyteBuilds
+    },
+    {
+      path: '/Inscription',
+      name: 'Inscription',
+      component: RegistrationPage
+    },
+    {
+      path: '/Connexion',
+      name: 'Connexion',
+      component: ConnectionPage
     }
   ]
 })

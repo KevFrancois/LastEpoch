@@ -1,4 +1,5 @@
 <script setup>
+import FooterNav from '@/components/FooterNav.vue'
 import BuildCards from '../components/BuildCards.vue'
 </script>
 
@@ -39,6 +40,10 @@ import BuildCards from '../components/BuildCards.vue'
       /></RouterLink>
     </div>
   </div>
+
+  <footer>
+    <FooterNav />
+  </footer>
 </template>
 
 <style>

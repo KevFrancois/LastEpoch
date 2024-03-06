@@ -10,16 +10,15 @@ import LogoLe from '../src/components/LogoLe.vue'
       <div class="NavLinks">
         <RouterLink to="/" title="Accueil" alt="Accueil" class="Accueil">Accueil</RouterLink>
         <RouterLink to="/Builds" title="Builds" alt="Builds" class="Builds">Builds</RouterLink>
-        <RouterLink to="/" title="Accueil" alt="Accueil" class="Inscription"
+        <RouterLink to="/Inscription" title="Inscription" alt="Inscription" class="Inscription"
           >Inscription</RouterLink
         >
-        <RouterLink to="/" title="Accueil" alt="Accueil" class="Connexion">Connexion</RouterLink>
+        <RouterLink to="/Connexion" title="Connexion" alt="Connexion" class="Connexion"
+          >Connexion</RouterLink
+        >
       </div>
     </nav>
   </header>
-  <footer>
-    <img src="./assets/Logo_Last_Epoch.png" class="LastEpochLogo" />
-  </footer>
 
   <RouterView />
 </template>
@@ -52,9 +51,7 @@ body {
   margin: 0 auto;
   width: 80%;
 }
-.LastEpochLogo {
-  width: 5%;
-}
+
 .Accueil:hover,
 .Builds:hover,
 .Inscription:hover,
