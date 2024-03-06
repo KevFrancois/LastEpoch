@@ -8,8 +8,12 @@ import LogoLe from '../src/components/LogoLe.vue'
     <LogoLe class="LogoLe" />
     <nav>
       <div class="NavLinks">
-        <RouterLink to="/" title="Accueil" alt="Accueil" class="accueil">Accueil</RouterLink>
-        <RouterLink to="/Builds" title="Builds" alt="Builds" class="builds">Builds</RouterLink>
+        <RouterLink to="/" title="Accueil" alt="Accueil" class="Accueil">Accueil</RouterLink>
+        <RouterLink to="/Builds" title="Builds" alt="Builds" class="Builds">Builds</RouterLink>
+        <RouterLink to="/" title="Accueil" alt="Accueil" class="Inscription"
+          >Inscription</RouterLink
+        >
+        <RouterLink to="/" title="Accueil" alt="Accueil" class="Connexion">Connexion</RouterLink>
       </div>
     </nav>
   </header>
@@ -26,14 +30,16 @@ import LogoLe from '../src/components/LogoLe.vue'
   margin-top: 10px;
   align-items: center;
   background-color: #1a1124;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
   border-radius: 5px;
   position: sticky;
   top: 0;
 }
-.accueil,
-.builds {
+.Accueil,
+.Builds,
+.Inscription,
+.Connexion {
   text-decoration: none;
   margin: 15px;
   color: white;
@@ -49,12 +55,17 @@ body {
 .LastEpochLogo {
   width: 5%;
 }
-.accueil:hover,
-.builds:hover {
+.Accueil:hover,
+.Builds:hover,
+.Inscription:hover,
+.Connexion:hover {
   transform: scale(1);
   box-shadow: 0 0 15px #5701a8;
   text-shadow: 0 0 10px #5701a8;
   border-radius: 10px;
   transition: 0.3s;
+}
+.Inscription {
+  margin-left: 980px;
 }
 </style>
