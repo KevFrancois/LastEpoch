@@ -11,7 +11,9 @@ import LogoLe from '../src/components/LogoLe.vue'
       <RouterLink to="/Builds" title="Builds" alt="Builds" class="builds">Builds</RouterLink>
     </nav>
   </header>
-  <footer></footer>
+  <footer>
+    <img src="./assets/Logo_Last_Epoch.png" class="LastEpochLogo" />
+  </footer>
 
   <RouterView />
 </template>
@@ -31,11 +33,14 @@ import LogoLe from '../src/components/LogoLe.vue'
 .accueil,
 .builds {
   text-decoration: none;
-  margin: 10px;
+  margin: 20px;
   color: white;
 }
 body {
   margin: 0 auto;
   width: 80%;
+}
+.LastEpochLogo {
+  width: 5%;
 }
 </style>
