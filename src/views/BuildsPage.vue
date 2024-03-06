@@ -46,7 +46,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
   font-family: 'Play', sans-serif;
   font-weight: 550;
   font-style: normal;

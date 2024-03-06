@@ -7,8 +7,10 @@ import LogoLe from '../src/components/LogoLe.vue'
   <header class="Mainheader">
     <LogoLe class="LogoLe" />
     <nav>
-      <RouterLink to="/" title="Accueil" alt="Accueil" class="accueil">Accueil</RouterLink>
-      <RouterLink to="/Builds" title="Builds" alt="Builds" class="builds">Builds</RouterLink>
+      <div class="NavLinks">
+        <RouterLink to="/" title="Accueil" alt="Accueil" class="accueil">Accueil</RouterLink>
+        <RouterLink to="/Builds" title="Builds" alt="Builds" class="builds">Builds</RouterLink>
+      </div>
     </nav>
   </header>
   <footer>
@@ -33,8 +35,12 @@ import LogoLe from '../src/components/LogoLe.vue'
 .accueil,
 .builds {
   text-decoration: none;
-  margin: 20px;
+  margin: 15px;
   color: white;
+  background-color: #1f142b;
+  padding: 7px 15px 7px 15px;
+  border-radius: 30px;
+  transition: 0.3s;
 }
 body {
   margin: 0 auto;
@@ -42,5 +48,13 @@ body {
 }
 .LastEpochLogo {
   width: 5%;
+}
+.accueil:hover,
+.builds:hover {
+  transform: scale(1);
+  box-shadow: 0 0 15px #5701a8;
+  text-shadow: 0 0 10px #5701a8;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 </style>
