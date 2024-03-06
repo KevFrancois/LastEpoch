@@ -56,9 +56,17 @@ export default defineComponent({
   box-shadow: 1px 12px 16px -6px rgba(0, 0, 0, 0.86);
   -webkit-box-shadow: 1px 12px 16px -6px rgba(0, 0, 0, 0.86);
   -moz-box-shadow: 1px 12px 16px -6px rgba(0, 0, 0, 0.86);
+  transition: 0.3s;
 }
 h3 {
   display: flex;
   align-items: center;
+}
+.Cards:hover {
+  transform: scale(1);
+  box-shadow: 0 0 15px #5701a8;
+  text-shadow: 0 0 10px #5701a8;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 </style>

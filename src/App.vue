@@ -11,6 +11,7 @@ import LogoLe from '../src/components/LogoLe.vue'
       <RouterLink to="/Builds" title="Builds" alt="Builds" class="builds">Builds</RouterLink>
     </nav>
   </header>
+  <footer></footer>
 
   <RouterView />
 </template>

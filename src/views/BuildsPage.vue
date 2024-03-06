@@ -8,11 +8,36 @@ import BuildCards from '../components/BuildCards.vue'
   </div>
   <h2>Builds</h2>
   <div class="BuildCards">
-    <BuildCards text="Sentinel" img="Sentinel.png" alt="Logo Sentinel" class="BuildCardsItem" />
-    <BuildCards text="Rogue" img="Rogue.png" alt="Logo Rogue" class="BuildCardsItem" />
-    <BuildCards text="Mage" img="Mage.png" alt="Logo Mage" class="BuildCardsItem" />
-    <BuildCards text="Primalist" img="Primalist.png" alt="Logo Primalist" class="BuildCardsItem" />
-    <BuildCards text="Acolyte" img="Acolyte.png" alt="Logo Acolyte" class="BuildCardsItem" />
+    <div class="Sentinel">
+      <RouterLink to="/Builds/Sentinel" title="Accueil" alt="Accueil" class="Surlign"
+        ><BuildCards text="Sentinel" img="Sentinel.png" alt="Logo Sentinel" class="BuildCardsItem"
+      /></RouterLink>
+    </div>
+    <div class="Rogue">
+      <RouterLink to="/Builds/Rogue" title="Accueil" alt="Accueil" class="Surlign"
+        ><BuildCards text="Rogue" img="Rogue.png" alt="Logo Rogue" class="BuildCardsItem"
+      /></RouterLink>
+    </div>
+    <div class="Mage">
+      <RouterLink to="/Builds/Mage" title="Accueil" alt="Accueil" class="Surlign"
+        ><BuildCards text="Mage" img="Mage.png" alt="Logo Mage" class="BuildCardsItem"
+      /></RouterLink>
+    </div>
+    <div class="Primalist">
+      <RouterLink to="/Builds/Primalist" title="Accueil" alt="Accueil" class="Surlign"
+        ><BuildCards
+          text="Primalist"
+          img="Primalist.png"
+          alt="Logo Primalist"
+          class="BuildCardsItem"
+        />
+      </RouterLink>
+    </div>
+    <div class="Acolyte">
+      <RouterLink to="/Builds/Acolyte" title="Accueil" alt="Accueil" class="Surlign"
+        ><BuildCards text="Acolyte" img="Acolyte.png" alt="Logo Acolyte" class="BuildCardsItem"
+      /></RouterLink>
+    </div>
   </div>
 </template>
 
@@ -54,11 +79,31 @@ h3 {
   flex-direction: column;
 }
 .BuildCards {
-  grid-template-columns: repeat(2, 1fr);
   display: grid;
-  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    ' a a b b '
+    ' c c d d '
+    ' e f f g ';
+  justify-content: center;
+  gap: 25px;
 }
-.BuildCardsItem:last-child {
-  justify-self: center;
+.Sentinel {
+  grid-area: a;
+}
+.Rogue {
+  grid-area: b;
+}
+.Mage {
+  grid-area: c;
+}
+.Primalist {
+  grid-area: d;
+}
+.Acolyte {
+  grid-area: f;
+}
+.Surlign {
+  text-decoration: none;
 }
 </style>
